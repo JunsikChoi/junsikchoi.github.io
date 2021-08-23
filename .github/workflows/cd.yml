@@ -1,10 +1,11 @@
-name: cd
-
 on: [push, pull_request]
-
 jobs:
-  cd:
+  front-deployment:
+    name: Front-Deployment
+
     runs-on: ${{ matrix.os }}
+
+    if: contains('refs/heads/main', github.ref)
 
     strategy:
       matrix:
