@@ -27,7 +27,9 @@ jobs:
         run: pnpm install
 
       - name: build
-        run: pnpm run build
+        run: |
+          pnpm run build
+          touch build/.nojekyll
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v1
