@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: This is test post
 description: this is test post for my blog
 tags: ["tag1", "tag2", "tag3"]
@@ -48,7 +48,7 @@ determines the header level.)
 
 Images are added with `![Image Alt](./images/image.jpg)`
 
-![Image](/favicon.png)
+![Image](/favicon.ico)
 
 ### Blockquotes
 
